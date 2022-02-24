@@ -1,0 +1,38 @@
+table{
+    width: 100%;
+}
+th,td{
+    background-color:rgb(172, 169, 218) ;
+    border:3px solid rgb(26, 46, 109);
+border-collapse:collapse;
+    text-align: center;
+    table-layout: 100%;
+}
+h2,h3{
+    text-decoration: none;
+    text-align: center;
+    color: cadetblue;
+    
+}
+button{
+    color: rgb(201, 39, 39);
+    background-color: rgb(75, 204, 243);
+}
+label{
+    
+    text-align: center;
+}
+select{
+    background-color: rgb(153, 186, 229);
+}
+form{
+    margin: 10px;
+    background-color: burlywood;
+    border-radius: 2px;
+}
+div{
+    background-color: rgba(97, 226, 114, 0.151);
+    text-align: center;
+    border: 2px solid black;
+}
+

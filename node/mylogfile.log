@@ -1,0 +1,129 @@
+2022-02-22 17:12:25.410 INFO  connected to doctors 
+2022-02-22 17:55:39.108 INFO  doctors validation failed: speciality: Path `speciality` is required., qualification: Path `qualification` is required., name: Path `name` is required., doctorNumber: Path `doctorNumber` is required.
+{"errors":{"speciality":{"name":"ValidatorError","message":"Path `speciality` is required.","properties":{"message":"Path `speciality` is required.","type":"required","path":"speciality"},"kind":"required","path":"speciality"},"qualification":{"name":"ValidatorError","message":"Path `qualification` is required.","properties":{"message":"Path `qualification` is required.","type":"required","path":"qualification"},"kind":"required","path":"qualification"},"name":{"name":"ValidatorError","message":"Path `name` is required.","properties":{"message":"Path `name` is required.","type":"required","path":"name"},"kind":"required","path":"name"},"doctorNumber":{"name":"ValidatorError","message":"Path `doctorNumber` is required.","properties":{"message":"Path `doctorNumber` is required.","type":"required","path":"doctorNumber"},"kind":"required","path":"doctorNumber"}},"_message":"doctors validation failed","name":"ValidationError","message":"doctors validation failed: speciality: Path `speciality` is required., qualification: Path `qualification` is required., name: Path `name` is required., doctorNumber: Path `doctorNumber` is required."}
+ValidationError: doctors validation failed: speciality: Path `speciality` is required., qualification: Path `qualification` is required., name: Path `name` is required., doctorNumber: Path `doctorNumber` is required.
+    at model.Object.<anonymous>.Document.invalidate (C:\Users\Dell 7010\OneDrive\Desktop\ProjectFinal\CapstonePrakitha\node\node_modules\mongoose\lib\document.js:2938:32)
+    at C:\Users\Dell 7010\OneDrive\Desktop\ProjectFinal\CapstonePrakitha\node\node_modules\mongoose\lib\document.js:2729:17
+    at C:\Users\Dell 7010\OneDrive\Desktop\ProjectFinal\CapstonePrakitha\node\node_modules\mongoose\lib\schematype.js:1324:9
+    at processTicksAndRejections (node:internal/process/task_queues:78:11) 
+2022-02-22 17:55:44.130 INFO  Cast to ObjectId failed for value ":id" (type string) at path "_id" for model "doctors"
+{"stringValue":"\":id\"","valueType":"string","kind":"ObjectId","value":":id","path":"_id","reason":{},"name":"CastError","message":"Cast to ObjectId failed for value \":id\" (type string) at path \"_id\" for model \"doctors\""}
+CastError: Cast to ObjectId failed for value ":id" (type string) at path "_id" for model "doctors"
+    at model.Query.exec (C:\Users\Dell 7010\OneDrive\Desktop\ProjectFinal\CapstonePrakitha\node\node_modules\mongoose\lib\query.js:4650:21)
+    at model.Query.then (C:\Users\Dell 7010\OneDrive\Desktop\ProjectFinal\CapstonePrakitha\node\node_modules\mongoose\lib\query.js:4749:15)
+    at C:\Users\Dell 7010\OneDrive\Desktop\ProjectFinal\CapstonePrakitha\node\src\app.js:129:6
+    at Layer.handle [as handle_request] (C:\Users\Dell 7010\OneDrive\Desktop\ProjectFinal\CapstonePrakitha\node\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell 7010\OneDrive\Desktop\ProjectFinal\CapstonePrakitha\node\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\Dell 7010\OneDrive\Desktop\ProjectFinal\CapstonePrakitha\node\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\Dell 7010\OneDrive\Desktop\ProjectFinal\CapstonePrakitha\node\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Dell 7010\OneDrive\Desktop\ProjectFinal\CapstonePrakitha\node\node_modules\express\lib\router\index.js:281:22
+    at param (C:\Users\Dell 7010\OneDrive\Desktop\ProjectFinal\CapstonePrakitha\node\node_modules\express\lib\router\index.js:360:14)
+    at param (C:\Users\Dell 7010\OneDrive\Desktop\ProjectFinal\CapstonePrakitha\node\node_modules\express\lib\router\index.js:371:14) 
+2022-02-22 17:55:49.328 INFO   
+2022-02-22 18:01:48.061 INFO  connected to the mongodb database 
+2022-02-22 18:01:48.183 INFO  doctors validation failed: speciality: Path `speciality` is required., qualification: Path `qualification` is required., name: Path `name` is required., doctorNumber: Path `doctorNumber` is required.
+{"errors":{"speciality":{"name":"ValidatorError","message":"Path `speciality` is required.","properties":{"message":"Path `speciality` is required.","type":"required","path":"speciality"},"kind":"required","path":"speciality"},"qualification":{"name":"ValidatorError","message":"Path `qualification` is required.","properties":{"message":"Path `qualification` is required.","type":"required","path":"qualification"},"kind":"required","path":"qualification"},"name":{"name":"ValidatorError","message":"Path `name` is required.","properties":{"message":"Path `name` is required.","type":"required","path":"name"},"kind":"required","path":"name"},"doctorNumber":{"name":"ValidatorError","message":"Path `doctorNumber` is required.","properties":{"message":"Path `doctorNumber` is required.","type":"required","path":"doctorNumber"},"kind":"required","path":"doctorNumber"}},"_message":"doctors validation failed","name":"ValidationError","message":"doctors validation failed: speciality: Path `speciality` is required., qualification: Path `qualification` is required., name: Path `name` is required., doctorNumber: Path `doctorNumber` is required."}
+ValidationError: doctors validation failed: speciality: Path `speciality` is required., qualification: Path `qualification` is required., name: Path `name` is required., doctorNumber: Path `doctorNumber` is required.
+    at model.Object.<anonymous>.Document.invalidate (C:\Users\Dell 7010\OneDrive\Desktop\ProjectFinal\CapstonePrakitha\node\node_modules\mongoose\lib\document.js:2938:32)
+    at C:\Users\Dell 7010\OneDrive\Desktop\ProjectFinal\CapstonePrakitha\node\node_modules\mongoose\lib\document.js:2729:17
+    at C:\Users\Dell 7010\OneDrive\Desktop\ProjectFinal\CapstonePrakitha\node\node_modules\mongoose\lib\schematype.js:1324:9
+    at processTicksAndRejections (node:internal/process/task_queues:78:11) 
+2022-02-22 18:01:53.199 INFO  Cast to ObjectId failed for value ":id" (type string) at path "_id" for model "doctors"
+{"stringValue":"\":id\"","valueType":"string","kind":"ObjectId","value":":id","path":"_id","reason":{},"name":"CastError","message":"Cast to ObjectId failed for value \":id\" (type string) at path \"_id\" for model \"doctors\""}
+CastError: Cast to ObjectId failed for value ":id" (type string) at path "_id" for model "doctors"
+    at model.Query.exec (C:\Users\Dell 7010\OneDrive\Desktop\ProjectFinal\CapstonePrakitha\node\node_modules\mongoose\lib\query.js:4650:21)
+    at model.Query.then (C:\Users\Dell 7010\OneDrive\Desktop\ProjectFinal\CapstonePrakitha\node\node_modules\mongoose\lib\query.js:4749:15)
+    at C:\Users\Dell 7010\OneDrive\Desktop\ProjectFinal\CapstonePrakitha\node\src\app.js:129:6
+    at Layer.handle [as handle_request] (C:\Users\Dell 7010\OneDrive\Desktop\ProjectFinal\CapstonePrakitha\node\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell 7010\OneDrive\Desktop\ProjectFinal\CapstonePrakitha\node\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\Dell 7010\OneDrive\Desktop\ProjectFinal\CapstonePrakitha\node\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\Dell 7010\OneDrive\Desktop\ProjectFinal\CapstonePrakitha\node\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Dell 7010\OneDrive\Desktop\ProjectFinal\CapstonePrakitha\node\node_modules\express\lib\router\index.js:281:22
+    at param (C:\Users\Dell 7010\OneDrive\Desktop\ProjectFinal\CapstonePrakitha\node\node_modules\express\lib\router\index.js:360:14)
+    at param (C:\Users\Dell 7010\OneDrive\Desktop\ProjectFinal\CapstonePrakitha\node\node_modules\express\lib\router\index.js:371:14) 
+2022-02-22 18:01:58.236 INFO   
+2022-02-22 18:15:57.243 INFO  connected to the mongodb database 
+2022-02-22 18:15:57.739 INFO  doctors validation failed: speciality: Path `speciality` is required., qualification: Path `qualification` is required., name: Path `name` is required., doctorNumber: Path `doctorNumber` is required.
+{"errors":{"speciality":{"name":"ValidatorError","message":"Path `speciality` is required.","properties":{"message":"Path `speciality` is required.","type":"required","path":"speciality"},"kind":"required","path":"speciality"},"qualification":{"name":"ValidatorError","message":"Path `qualification` is required.","properties":{"message":"Path `qualification` is required.","type":"required","path":"qualification"},"kind":"required","path":"qualification"},"name":{"name":"ValidatorError","message":"Path `name` is required.","properties":{"message":"Path `name` is required.","type":"required","path":"name"},"kind":"required","path":"name"},"doctorNumber":{"name":"ValidatorError","message":"Path `doctorNumber` is required.","properties":{"message":"Path `doctorNumber` is required.","type":"required","path":"doctorNumber"},"kind":"required","path":"doctorNumber"}},"_message":"doctors validation failed","name":"ValidationError","message":"doctors validation failed: speciality: Path `speciality` is required., qualification: Path `qualification` is required., name: Path `name` is required., doctorNumber: Path `doctorNumber` is required."}
+ValidationError: doctors validation failed: speciality: Path `speciality` is required., qualification: Path `qualification` is required., name: Path `name` is required., doctorNumber: Path `doctorNumber` is required.
+    at model.Object.<anonymous>.Document.invalidate (C:\Users\Dell 7010\OneDrive\Desktop\ProjectFinal\CapstonePrakitha\node\node_modules\mongoose\lib\document.js:2938:32)
+    at C:\Users\Dell 7010\OneDrive\Desktop\ProjectFinal\CapstonePrakitha\node\node_modules\mongoose\lib\document.js:2729:17
+    at C:\Users\Dell 7010\OneDrive\Desktop\ProjectFinal\CapstonePrakitha\node\node_modules\mongoose\lib\schematype.js:1324:9
+    at processTicksAndRejections (node:internal/process/task_queues:78:11) 
+2022-02-22 18:16:02.907 INFO  Cast to ObjectId failed for value ":id" (type string) at path "_id" for model "doctors"
+{"stringValue":"\":id\"","valueType":"string","kind":"ObjectId","value":":id","path":"_id","reason":{},"name":"CastError","message":"Cast to ObjectId failed for value \":id\" (type string) at path \"_id\" for model \"doctors\""}
+CastError: Cast to ObjectId failed for value ":id" (type string) at path "_id" for model "doctors"
+    at model.Query.exec (C:\Users\Dell 7010\OneDrive\Desktop\ProjectFinal\CapstonePrakitha\node\node_modules\mongoose\lib\query.js:4650:21)
+    at model.Query.then (C:\Users\Dell 7010\OneDrive\Desktop\ProjectFinal\CapstonePrakitha\node\node_modules\mongoose\lib\query.js:4749:15)
+    at C:\Users\Dell 7010\OneDrive\Desktop\ProjectFinal\CapstonePrakitha\node\src\app.js:129:6
+    at Layer.handle [as handle_request] (C:\Users\Dell 7010\OneDrive\Desktop\ProjectFinal\CapstonePrakitha\node\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell 7010\OneDrive\Desktop\ProjectFinal\CapstonePrakitha\node\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\Dell 7010\OneDrive\Desktop\ProjectFinal\CapstonePrakitha\node\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\Dell 7010\OneDrive\Desktop\ProjectFinal\CapstonePrakitha\node\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Dell 7010\OneDrive\Desktop\ProjectFinal\CapstonePrakitha\node\node_modules\express\lib\router\index.js:281:22
+    at param (C:\Users\Dell 7010\OneDrive\Desktop\ProjectFinal\CapstonePrakitha\node\node_modules\express\lib\router\index.js:360:14)
+    at param (C:\Users\Dell 7010\OneDrive\Desktop\ProjectFinal\CapstonePrakitha\node\node_modules\express\lib\router\index.js:371:14) 
+2022-02-22 18:16:09.719 INFO   
+2022-02-22 18:24:50.892 INFO  connected to the mongodb database 
+2022-02-22 18:24:54.250 INFO  one doctor deleted 
+2022-02-23 12:39:27.603 INFO  connected to the mongodb database 
+2022-02-23 14:08:55.885 INFO  connected to the mongodb database 
+2022-02-23 14:26:21.594 INFO  one doctor deleted 
+2022-02-23 15:08:56.749 INFO   Doctor updated 
+2022-02-23 15:09:02.912 INFO   Doctor updated 
+2022-02-23 15:09:04.577 INFO   Doctor updated 
+2022-02-23 15:16:54.823 INFO  doctors validation failed: doctorNumber: Path `doctorNumber` is required., name: Path `name` is required., speciality: Path `speciality` is required.
+{"errors":{"doctorNumber":{"name":"ValidatorError","message":"Path `doctorNumber` is required.","properties":{"message":"Path `doctorNumber` is required.","type":"required","path":"doctorNumber","value":null},"kind":"required","path":"doctorNumber","value":null},"name":{"name":"ValidatorError","message":"Path `name` is required.","properties":{"message":"Path `name` is required.","type":"required","path":"name","value":""},"kind":"required","path":"name","value":""},"speciality":{"name":"ValidatorError","message":"Path `speciality` is required.","properties":{"message":"Path `speciality` is required.","type":"required","path":"speciality","value":""},"kind":"required","path":"speciality","value":""}},"_message":"doctors validation failed","name":"ValidationError","message":"doctors validation failed: doctorNumber: Path `doctorNumber` is required., name: Path `name` is required., speciality: Path `speciality` is required."}
+ValidationError: doctors validation failed: doctorNumber: Path `doctorNumber` is required., name: Path `name` is required., speciality: Path `speciality` is required.
+    at model.Document.invalidate (C:\Users\Dell 7010\OneDrive\Desktop\ProjectFinal\CapstonePrakitha\node\node_modules\mongoose\lib\document.js:2938:32)
+    at C:\Users\Dell 7010\OneDrive\Desktop\ProjectFinal\CapstonePrakitha\node\node_modules\mongoose\lib\document.js:2729:17
+    at C:\Users\Dell 7010\OneDrive\Desktop\ProjectFinal\CapstonePrakitha\node\node_modules\mongoose\lib\schematype.js:1324:9
+    at processTicksAndRejections (node:internal/process/task_queues:78:11) 
+2022-02-23 15:17:40.555 INFO   Doctor updated 
+2022-02-23 15:17:42.157 INFO   Doctor updated 
+2022-02-23 15:17:43.046 INFO   Doctor updated 
+2022-02-23 15:17:43.137 INFO   Doctor updated 
+2022-02-23 15:17:43.435 INFO   Doctor updated 
+2022-02-23 15:17:52.941 INFO   Doctor updated 
+2022-02-23 15:21:44.386 INFO  New Doctor Inserted 
+2022-02-23 15:22:44.138 INFO  New Doctor Inserted 
+2022-02-23 15:22:45.585 INFO  New Doctor Inserted 
+2022-02-23 15:22:56.079 INFO  New Doctor Inserted 
+2022-02-23 15:23:11.534 INFO  New Doctor Inserted 
+2022-02-23 15:32:37.961 INFO  one doctor deleted 
+2022-02-23 15:33:00.051 INFO  one doctor deleted 
+2022-02-23 15:33:18.159 INFO  one doctor deleted 
+2022-02-23 15:33:50.052 INFO  New Doctor Inserted 
+2022-02-23 15:35:20.441 INFO  New Doctor Inserted 
+2022-02-23 15:35:39.820 INFO  New Doctor Inserted 
+2022-02-23 15:35:44.788 INFO  doctors validation failed: doctorNumber: Path `doctorNumber` is required., name: Path `name` is required., qualification: Path `qualification` is required., speciality: Path `speciality` is required.
+{"errors":{"doctorNumber":{"name":"ValidatorError","message":"Path `doctorNumber` is required.","properties":{"message":"Path `doctorNumber` is required.","type":"required","path":"doctorNumber","value":null},"kind":"required","path":"doctorNumber","value":null},"name":{"name":"ValidatorError","message":"Path `name` is required.","properties":{"message":"Path `name` is required.","type":"required","path":"name","value":""},"kind":"required","path":"name","value":""},"qualification":{"name":"ValidatorError","message":"Path `qualification` is required.","properties":{"message":"Path `qualification` is required.","type":"required","path":"qualification","value":""},"kind":"required","path":"qualification","value":""},"speciality":{"name":"ValidatorError","message":"Path `speciality` is required.","properties":{"message":"Path `speciality` is required.","type":"required","path":"speciality","value":""},"kind":"required","path":"speciality","value":""}},"_message":"doctors validation failed","name":"ValidationError","message":"doctors validation failed: doctorNumber: Path `doctorNumber` is required., name: Path `name` is required., qualification: Path `qualification` is required., speciality: Path `speciality` is required."}
+ValidationError: doctors validation failed: doctorNumber: Path `doctorNumber` is required., name: Path `name` is required., qualification: Path `qualification` is required., speciality: Path `speciality` is required.
+    at model.Document.invalidate (C:\Users\Dell 7010\OneDrive\Desktop\ProjectFinal\CapstonePrakitha\node\node_modules\mongoose\lib\document.js:2938:32)
+    at C:\Users\Dell 7010\OneDrive\Desktop\ProjectFinal\CapstonePrakitha\node\node_modules\mongoose\lib\document.js:2729:17
+    at C:\Users\Dell 7010\OneDrive\Desktop\ProjectFinal\CapstonePrakitha\node\node_modules\mongoose\lib\schematype.js:1324:9
+    at processTicksAndRejections (node:internal/process/task_queues:78:11) 
+2022-02-23 15:35:46.203 INFO  doctors validation failed: doctorNumber: Path `doctorNumber` is required., name: Path `name` is required., qualification: Path `qualification` is required., speciality: Path `speciality` is required.
+{"errors":{"doctorNumber":{"name":"ValidatorError","message":"Path `doctorNumber` is required.","properties":{"message":"Path `doctorNumber` is required.","type":"required","path":"doctorNumber","value":null},"kind":"required","path":"doctorNumber","value":null},"name":{"name":"ValidatorError","message":"Path `name` is required.","properties":{"message":"Path `name` is required.","type":"required","path":"name","value":""},"kind":"required","path":"name","value":""},"qualification":{"name":"ValidatorError","message":"Path `qualification` is required.","properties":{"message":"Path `qualification` is required.","type":"required","path":"qualification","value":""},"kind":"required","path":"qualification","value":""},"speciality":{"name":"ValidatorError","message":"Path `speciality` is required.","properties":{"message":"Path `speciality` is required.","type":"required","path":"speciality","value":""},"kind":"required","path":"speciality","value":""}},"_message":"doctors validation failed","name":"ValidationError","message":"doctors validation failed: doctorNumber: Path `doctorNumber` is required., name: Path `name` is required., qualification: Path `qualification` is required., speciality: Path `speciality` is required."}
+ValidationError: doctors validation failed: doctorNumber: Path `doctorNumber` is required., name: Path `name` is required., qualification: Path `qualification` is required., speciality: Path `speciality` is required.
+    at model.Document.invalidate (C:\Users\Dell 7010\OneDrive\Desktop\ProjectFinal\CapstonePrakitha\node\node_modules\mongoose\lib\document.js:2938:32)
+    at C:\Users\Dell 7010\OneDrive\Desktop\ProjectFinal\CapstonePrakitha\node\node_modules\mongoose\lib\document.js:2729:17
+    at C:\Users\Dell 7010\OneDrive\Desktop\ProjectFinal\CapstonePrakitha\node\node_modules\mongoose\lib\schematype.js:1324:9
+    at processTicksAndRejections (node:internal/process/task_queues:78:11) 
+2022-02-23 15:40:37.969 INFO  New Doctor Inserted 
+2022-02-23 15:41:09.453 INFO  doctors validation failed: doctorNumber: Path `doctorNumber` is required., name: Path `name` is required., qualification: Path `qualification` is required., speciality: Path `speciality` is required.
+{"errors":{"doctorNumber":{"name":"ValidatorError","message":"Path `doctorNumber` is required.","properties":{"message":"Path `doctorNumber` is required.","type":"required","path":"doctorNumber","value":null},"kind":"required","path":"doctorNumber","value":null},"name":{"name":"ValidatorError","message":"Path `name` is required.","properties":{"message":"Path `name` is required.","type":"required","path":"name","value":""},"kind":"required","path":"name","value":""},"qualification":{"name":"ValidatorError","message":"Path `qualification` is required.","properties":{"message":"Path `qualification` is required.","type":"required","path":"qualification","value":""},"kind":"required","path":"qualification","value":""},"speciality":{"name":"ValidatorError","message":"Path `speciality` is required.","properties":{"message":"Path `speciality` is required.","type":"required","path":"speciality","value":""},"kind":"required","path":"speciality","value":""}},"_message":"doctors validation failed","name":"ValidationError","message":"doctors validation failed: doctorNumber: Path `doctorNumber` is required., name: Path `name` is required., qualification: Path `qualification` is required., speciality: Path `speciality` is required."}
+ValidationError: doctors validation failed: doctorNumber: Path `doctorNumber` is required., name: Path `name` is required., qualification: Path `qualification` is required., speciality: Path `speciality` is required.
+    at model.Document.invalidate (C:\Users\Dell 7010\OneDrive\Desktop\ProjectFinal\CapstonePrakitha\node\node_modules\mongoose\lib\document.js:2938:32)
+    at C:\Users\Dell 7010\OneDrive\Desktop\ProjectFinal\CapstonePrakitha\node\node_modules\mongoose\lib\document.js:2729:17
+    at C:\Users\Dell 7010\OneDrive\Desktop\ProjectFinal\CapstonePrakitha\node\node_modules\mongoose\lib\schematype.js:1324:9
+    at processTicksAndRejections (node:internal/process/task_queues:78:11) 
+2022-02-23 15:41:10.737 INFO  doctors validation failed: doctorNumber: Path `doctorNumber` is required., name: Path `name` is required., qualification: Path `qualification` is required., speciality: Path `speciality` is required.
+{"errors":{"doctorNumber":{"name":"ValidatorError","message":"Path `doctorNumber` is required.","properties":{"message":"Path `doctorNumber` is required.","type":"required","path":"doctorNumber","value":null},"kind":"required","path":"doctorNumber","value":null},"name":{"name":"ValidatorError","message":"Path `name` is required.","properties":{"message":"Path `name` is required.","type":"required","path":"name","value":""},"kind":"required","path":"name","value":""},"qualification":{"name":"ValidatorError","message":"Path `qualification` is required.","properties":{"message":"Path `qualification` is required.","type":"required","path":"qualification","value":""},"kind":"required","path":"qualification","value":""},"speciality":{"name":"ValidatorError","message":"Path `speciality` is required.","properties":{"message":"Path `speciality` is required.","type":"required","path":"speciality","value":""},"kind":"required","path":"speciality","value":""}},"_message":"doctors validation failed","name":"ValidationError","message":"doctors validation failed: doctorNumber: Path `doctorNumber` is required., name: Path `name` is required., qualification: Path `qualification` is required., speciality: Path `speciality` is required."}
+ValidationError: doctors validation failed: doctorNumber: Path `doctorNumber` is required., name: Path `name` is required., qualification: Path `qualification` is required., speciality: Path `speciality` is required.
+    at model.Document.invalidate (C:\Users\Dell 7010\OneDrive\Desktop\ProjectFinal\CapstonePrakitha\node\node_modules\mongoose\lib\document.js:2938:32)
+    at C:\Users\Dell 7010\OneDrive\Desktop\ProjectFinal\CapstonePrakitha\node\node_modules\mongoose\lib\document.js:2729:17
+    at C:\Users\Dell 7010\OneDrive\Desktop\ProjectFinal\CapstonePrakitha\node\node_modules\mongoose\lib\schematype.js:1324:9
+    at processTicksAndRejections (node:internal/process/task_queues:78:11) 
+2022-02-23 15:55:07.424 INFO  one doctor deleted 
+2022-02-23 15:55:08.943 INFO  one doctor deleted 
