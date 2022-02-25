@@ -127,3 +127,28 @@ ValidationError: doctors validation failed: doctorNumber: Path `doctorNumber` is
     at processTicksAndRejections (node:internal/process/task_queues:78:11) 
 2022-02-23 15:55:07.424 INFO  one doctor deleted 
 2022-02-23 15:55:08.943 INFO  one doctor deleted 
+2022-02-25 10:30:29.802 INFO  connected to the mongodb database 
+2022-02-25 10:53:35.400 INFO   Doctor updated 
+2022-02-25 10:53:56.007 INFO  one doctor deleted 
+2022-02-25 10:54:22.493 INFO  New Doctor Inserted 
+2022-02-25 10:54:40.343 INFO  doctors validation failed: speciality: Path `speciality` is required.
+{"errors":{"speciality":{"name":"ValidatorError","message":"Path `speciality` is required.","properties":{"message":"Path `speciality` is required.","type":"required","path":"speciality","value":""},"kind":"required","path":"speciality","value":""}},"_message":"doctors validation failed","name":"ValidationError","message":"doctors validation failed: speciality: Path `speciality` is required."}
+ValidationError: doctors validation failed: speciality: Path `speciality` is required.
+    at model.Document.invalidate (C:\Users\Dell 7010\OneDrive\Desktop\project git\CapstoneProject_Prakitha\Clinic_Management_Node_App\node_modules\mongoose\lib\document.js:2938:32)
+    at C:\Users\Dell 7010\OneDrive\Desktop\project git\CapstoneProject_Prakitha\Clinic_Management_Node_App\node_modules\mongoose\lib\document.js:2729:17
+    at C:\Users\Dell 7010\OneDrive\Desktop\project git\CapstoneProject_Prakitha\Clinic_Management_Node_App\node_modules\mongoose\lib\schematype.js:1324:9
+    at processTicksAndRejections (node:internal/process/task_queues:78:11) 
+2022-02-25 11:43:58.605 INFO  doctors validation failed: speciality: Path `speciality` is required.
+{"errors":{"speciality":{"name":"ValidatorError","message":"Path `speciality` is required.","properties":{"message":"Path `speciality` is required.","type":"required","path":"speciality","value":""},"kind":"required","path":"speciality","value":""}},"_message":"doctors validation failed","name":"ValidationError","message":"doctors validation failed: speciality: Path `speciality` is required."}
+ValidationError: doctors validation failed: speciality: Path `speciality` is required.
+    at model.Document.invalidate (C:\Users\Dell 7010\OneDrive\Desktop\project git\CapstoneProject_Prakitha\Clinic_Management_Node_App\node_modules\mongoose\lib\document.js:2938:32)
+    at C:\Users\Dell 7010\OneDrive\Desktop\project git\CapstoneProject_Prakitha\Clinic_Management_Node_App\node_modules\mongoose\lib\document.js:2729:17
+    at C:\Users\Dell 7010\OneDrive\Desktop\project git\CapstoneProject_Prakitha\Clinic_Management_Node_App\node_modules\mongoose\lib\schematype.js:1324:9
+    at processTicksAndRejections (node:internal/process/task_queues:78:11) 
+2022-02-25 11:44:36.534 INFO  doctors validation failed: speciality: Path `speciality` is required.
+{"errors":{"speciality":{"name":"ValidatorError","message":"Path `speciality` is required.","properties":{"message":"Path `speciality` is required.","type":"required","path":"speciality","value":""},"kind":"required","path":"speciality","value":""}},"_message":"doctors validation failed","name":"ValidationError","message":"doctors validation failed: speciality: Path `speciality` is required."}
+ValidationError: doctors validation failed: speciality: Path `speciality` is required.
+    at model.Document.invalidate (C:\Users\Dell 7010\OneDrive\Desktop\project git\CapstoneProject_Prakitha\Clinic_Management_Node_App\node_modules\mongoose\lib\document.js:2938:32)
+    at C:\Users\Dell 7010\OneDrive\Desktop\project git\CapstoneProject_Prakitha\Clinic_Management_Node_App\node_modules\mongoose\lib\document.js:2729:17
+    at C:\Users\Dell 7010\OneDrive\Desktop\project git\CapstoneProject_Prakitha\Clinic_Management_Node_App\node_modules\mongoose\lib\schematype.js:1324:9
+    at processTicksAndRejections (node:internal/process/task_queues:78:11) 

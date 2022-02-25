@@ -5,10 +5,11 @@ import { put, takeLatest, all } from "redux-saga/effects";
 // my node app saga
 
 function* searchDoctor(action) {
-  const json = yield fetch("http://localhost:8000/doctors/search/speciality/" + action.speciality).then((response) =>
-    response.json()
-
-  );
+  const json = yield fetch("http://localhost:8000/doctors/search/speciality/" + action.speciality)
+    .then((response) =>
+      response.json()
+    )
+    .catch((err) => console.log(err));
   yield put({ type: "DOCTOR_DATA_RECEIVED", json: json });
 }
 function* actionWatcher() {
@@ -33,7 +34,8 @@ function* addNewDoctor(action) {
     headers: {
       "Content-type": "application/json;chartset=UTF-8",
     },
-  }).then((res) => res.json());
+  }).then((res) => res.json())
+    .catch((err) => console.log(err))
   yield put({ type: "ADD_DOCTOR_SERVER_RESPONSE", serverMsg: serverResponse.msg });
   console.log("added doctor sucessfully")
 }
@@ -44,26 +46,26 @@ function* actionWatcher1() {
 function* deleteDoctor(action) {
   var bodyContent = {
     // _id:action.doctor._id,
-     doctorNumber: action.doctorNumber,
+    doctorNumber: action.doctorNumber,
     // name: action.doctor.name,
     //qualification: action.doctor.qualification,
     // speciality: action.doctor.speciality,
   };
-//   console.log("inside delete saga")
-// console.log(action)
+  //   console.log("inside delete saga")
+  // console.log(action)
   var stringifiedBody = JSON.stringify(bodyContent);
-  const serverResponse = yield fetch("http://localhost:8000/doctors/delete/"+action.doctorNumber,{
-  method: "POST",
-  body: stringifiedBody,
+  const serverResponse = yield fetch("http://localhost:8000/doctors/delete/" + action.doctorNumber, {
+    method: "POST",
+    body: stringifiedBody,
     headers: {
       "Content-type": "application/json;chartset=UTF-8",
     },
-}).then((response) =>
+  }).then((response) =>
     response.json()
 
-  );
+  ).catch((err) => console.log(err))
   // console.log("inside delete saga")
-  yield put({ type: "DOCTOR_DATA_DELETED",serverMsg: serverResponse.msg });
+  yield put({ type: "DOCTOR_DATA_DELETED", serverMsg: serverResponse.msg });
 }
 function* actionWatcher2() {
   yield takeLatest("DELETED_A_DOCTOR_IN_BACKEND", deleteDoctor);
@@ -73,7 +75,7 @@ function* actionWatcher2() {
 
 
 function* editNewDoctor(action) {
-  
+
   var bodyContent = {
     // _id:action.doctor._id,
     // doctorNumber: action.doctor.doctorNumber,
@@ -84,13 +86,14 @@ function* editNewDoctor(action) {
 
   var stringifiedBody = JSON.stringify(bodyContent);
 
-  const serverResponse = yield fetch("http://localhost:8000/doctors/update/"+action.doctor._id ,{
+  const serverResponse = yield fetch("http://localhost:8000/doctors/update/" + action.doctor._id, {
     method: "POST",
     body: stringifiedBody,
     headers: {
       "Content-type": "application/json;chartset=UTF-8",
     },
-  }).then((res) => res.json());
+  }).then((res) => res.json())
+    .catch((err) => console.log(err))
   yield put({ type: "EDIT_DOCTOR_SERVER_RESPONSE", serverMsg: serverResponse.msg });
   // console.log("edited doctor sucessfully")
 }
